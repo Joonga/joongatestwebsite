@@ -32,7 +32,6 @@
     position:fixed;
     width: 92%;
     display: block;
-    padding: 4%;
     margin: auto;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -40,7 +39,11 @@
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 50px;
     z-index: 999;
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    padding-right: calc( 4% + env(safe-area-inset-right) );
+    padding-left: calc( 4% + env(safe-area-inset-left) );
+    padding-top: calc( 10px + env(safe-area-inset-top) );
+    padding-bottom: 10px
+    /* padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); */
 
 
 }
