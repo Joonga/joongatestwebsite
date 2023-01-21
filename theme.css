@@ -40,6 +40,9 @@
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 50px;
     z-index: 999;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+
+
 }
 .in-nav svg{height:40px;}
 
